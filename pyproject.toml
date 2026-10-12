@@ -1,0 +1,9 @@
+[project]
+name = "athena-model"
+version = "0.1.0"
+description = "Modello economico per un assemblatore di server Arm (SiPearl Athena1)"
+requires-python = ">=3.10"
+dependencies = []
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

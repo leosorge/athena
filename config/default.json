@@ -1,0 +1,29 @@
+{
+  "_nota": "Tutti i valori sono IPOTESI da sostituire con preventivi reali. Il prezzo di Athena1 non è pubblico.",
+  "assumptions": {
+    "ram_eur_per_gb": 7.0,
+    "warranty_reserve_pct": 0.025,
+    "support_annual_pct": 0.06,
+    "support_margin_pct": 0.30,
+    "working_capital_days": [95, 125],
+    "startup_year": 2027,
+    "first_sales_year": 2028,
+    "annual_unit_growth": 0.0
+  },
+  "startup_costs": {
+    "progettazione_scheda_chassis": [350000, 600000],
+    "firmware_bmc_stack_inferenza": [500000, 800000],
+    "certificazioni_collaudi": [100000, 150000],
+    "legale_commerciale": [100000, 200000]
+  },
+  "lines": [
+    {"name": "Athena-16", "cores": 16, "chip_cost": 1500, "ram_gb": 128, "other_bom": 2500, "price_to_distributor": 6500},
+    {"name": "Athena-32", "cores": 32, "chip_cost": 3000, "ram_gb": 256, "other_bom": 3500, "price_to_distributor": 11000},
+    {"name": "Athena-64", "cores": 64, "chip_cost": 6500, "ram_gb": 512, "other_bom": 5500, "price_to_distributor": 20500}
+  ],
+  "scenarios": {
+    "prudente":    {"Athena-16": 150, "Athena-32": 100, "Athena-64": 50},
+    "base":        {"Athena-16": 300, "Athena-32": 200, "Athena-64": 100},
+    "ottimistico": {"Athena-16": 600, "Athena-32": 400, "Athena-64": 200}
+  }
+}
